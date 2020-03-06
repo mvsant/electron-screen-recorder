@@ -46,4 +46,29 @@ async function selectSource(source){
     // Preview the source in a video element
     videoElement.srcObject = stream;
     videoElement.play();
+
+    // Create the Media Recorder
+    const option = {mimeType: 'video/webm; codecs=vp9'};
+    mediaRecorder = new mediaRecorder(stream, options);
+
+    // Register event handlers
+    mediaRecorder.ondataavailable = handleDataAvailable;
+    mediaRecorder.onstop = handleStop;
+
+    // Captures all recorded chunks
+    function handleDataAvailable(e) {
+        console.log('Video data available');
+        recordedChunks.push(e.data);
+    }
+
+    // Saves the video file on stop
+    async function handleStop(e) {
+        const blob = new Blob(recordedChunks, {
+            type: 'video/webm; codecs=vp9'
+        });
+        const buffer = Buffer.from(await blob.arrayBuffer());
+    }
 };
+
+let mediaRecorder;// Media recorder instance to capture footage
+const recordedChunks = [];
