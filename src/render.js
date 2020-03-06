@@ -1,6 +1,7 @@
 const {desktopCapturer, remote} = require('electron');
 
-const {Menu} = remote;
+const {Menu, dialog} = remote;
+const {writeFile} = require('fs');
 
 // Buttons
 const videoElement = document.querySelector('video');
@@ -67,6 +68,14 @@ async function selectSource(source){
             type: 'video/webm; codecs=vp9'
         });
         const buffer = Buffer.from(await blob.arrayBuffer());
+
+        // Save file funcionality
+        const {filepath} = await dialog.showSaveDialog({
+            buttonLabel: 'Save video',
+            defaultPath: `video-${Date.now()}.webm`
+        });
+        console.log(filepath);
+        writeFile(filepath,buffer, () => console.log('video saved successfully'));
     }
 };
 
