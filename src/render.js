@@ -25,4 +25,25 @@ const videoOptionsMenu = Menu.buildFromTemplate(
     })
 );
 videoOptionsMenu.popup();
-}
+};
+
+// Change the video source window to record.
+async function selectSource(source){
+    videoSelectionButton.innerText = source.name;
+
+    const constraints = {
+        audio: false,
+        video: {
+            mandatory: {
+                chromeMediaSource: 'desktop',
+                chromeMediaSourceId: source.id
+            }
+        }
+    };
+    //Create a stream
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+
+    // Preview the source in a video element
+    videoElement.srcObject = stream;
+    videoElement.play();
+};
