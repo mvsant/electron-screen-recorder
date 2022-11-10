@@ -54,7 +54,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.63",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
     "@electron-forge/maker-zip": "^6.0.0-beta.63",
-    "electron": "^13.6.9",
+    "electron": "^18.3.7",
     "minimist": "^1.2.6",
     "trim-newlines": "^3.0.1"
   }
