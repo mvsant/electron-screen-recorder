@@ -1694,9 +1694,9 @@ inquirer@^8.0.0:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
-ip@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.npmjs.org/ip/-/ip-1.1.5.tgz"
+ip@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.npmjs.org/ip/-/ip-1.1.9.tgz"
 
 is-arrayish@^0.2.1:
   version "0.2.1"
