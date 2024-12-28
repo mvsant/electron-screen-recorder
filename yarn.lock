@@ -1589,8 +1589,8 @@ hosted-git-info@^4.0.1:
 
 http-cache-semantics@^4.1.1, http-cache-semantics@^4.1.1:
 
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz"
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.1.1.tgz"
 
 http-proxy-agent@^4.0.1:
   version "4.0.1"
