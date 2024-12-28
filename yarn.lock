@@ -2829,7 +2829,7 @@ socks@^2.6.1:
   version "2.6.2"
   resolved "https://registry.npmjs.org/socks/-/socks-2.6.2.tgz"
   dependencies:
-    ip "^1.1.5"
+    ip "^1.1.9"
     smart-buffer "^4.2.0"
 
 source-map-support@^0.5.13:
