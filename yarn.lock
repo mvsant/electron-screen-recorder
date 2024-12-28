@@ -855,9 +855,9 @@ cross-spawn-windows-exe@^1.1.0, cross-spawn-windows-exe@^1.2.0:
     is-wsl "^2.2.0"
     which "^2.0.2"
 
-cross-spawn@^6.0.0, cross-spawn@^6.0.5:
-  version "6.0.5"
-  resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-6.0.5.tgz"
+cross-spawn@^6.0.0, cross-spawn@^6.0.6:
+  version "6.0.6"
+  resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-6.0.6.tgz"
   dependencies:
     nice-try "^1.0.4"
     path-key "^2.0.1"
@@ -865,9 +865,9 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cross-spawn@^7.0.1:
-  version "7.0.3"
-  resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
+cross-spawn@^7.0.5:
+  version "7.0.5"
+  resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.5.tgz"
   dependencies:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
